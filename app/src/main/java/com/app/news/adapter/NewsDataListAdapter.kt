@@ -35,10 +35,10 @@ class NewsDataListAdapter () :
             newsText.text = oneItem.title
             val url = oneItem.urlToImage
             Glide
-                    .with(context)
-                    .load(url)
-                    .centerCrop()
-                    .into(newsImage);
+                .with(context)
+                .load(url)
+                .centerCrop()
+                .into(newsImage)
 
 
             card.setOnClickListener {
