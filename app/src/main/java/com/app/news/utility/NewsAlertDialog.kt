@@ -9,7 +9,7 @@ class NewsAlertDialog {
 
     public fun showAlertDialog(context: Context,title: String,msg : String){
         val dialogBuilder = context?.let { AlertDialog.Builder(it) }
-        dialogBuilder?.setMessage("Loading.. Please wait")
+        dialogBuilder?.setMessage(msg)
         alert = dialogBuilder?.create()!!
         alert.setTitle(title)
         alert.setMessage(msg)
