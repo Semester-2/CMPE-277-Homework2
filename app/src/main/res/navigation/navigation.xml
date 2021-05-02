@@ -11,4 +11,24 @@
         android:id="@+id/businessFragment"
         android:name="com.app.news.fragments.BusinessFragment"
         android:label="BusinessFragment" />
+    <fragment
+        android:id="@+id/entertainmentFragment"
+        android:name="com.app.news.fragments.EntertainmentFragment"
+        android:label="EntertainmentFragment" />
+    <fragment
+        android:id="@+id/healthFragment"
+        android:name="com.app.news.fragments.HealthFragment"
+        android:label="HealthFragment" />
+    <fragment
+        android:id="@+id/scienceFragment"
+        android:name="com.app.news.fragments.ScienceFragment"
+        android:label="ScienceFragment" />
+    <fragment
+        android:id="@+id/sportsFragment"
+        android:name="com.app.news.fragments.SportsFragment"
+        android:label="SportsFragment" />
+    <fragment
+        android:id="@+id/technologyFragment"
+        android:name="com.app.news.fragments.TechnologyFragment"
+        android:label="TechnologyFragment" />
 </navigation>

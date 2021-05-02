@@ -6,9 +6,19 @@
     <item
         android:id="@+id/businessFragment"
         android:title="@string/business" />
-    <item android:title="@string/entertainment" />
-    <item android:title="@string/health" />
-    <item android:title="@string/science" />
-    <item android:title="@string/sports" />
-    <item android:title="@string/technology" />
+    <item
+        android:id="@+id/entertainmentFragment"
+        android:title="@string/entertainment" />
+    <item
+        android:id="@+id/healthFragment"
+        android:title="@string/health" />
+    <item
+        android:id="@+id/scienceFragment"
+        android:title="@string/science" />
+    <item
+        android:id="@+id/sportsFragment"
+        android:title="@string/sports" />
+    <item
+        android:id="@+id/technologyFragment"
+        android:title="@string/technology" />
 </menu>

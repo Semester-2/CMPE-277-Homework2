@@ -19,7 +19,7 @@ import com.app.news.model.Category
 import com.app.news.utility.NewsAlertDialog
 import com.app.news.viewmodel.TopHeadlinesViewModel
 
-class BusinessFragment : Fragment() {
+class ScienceFragment : Fragment() {
 
     lateinit var binding : FragmentNewsDataBinding;
     lateinit var adapter : NewsDataListAdapter
@@ -27,7 +27,7 @@ class BusinessFragment : Fragment() {
     var newsAlertDialog = NewsAlertDialog()
 
     companion object{
-        const val TAG : String = "BusinessFragment"
+        const val TAG : String = "ScienceFragment"
     }
 
     override fun onCreateView(
@@ -38,10 +38,10 @@ class BusinessFragment : Fragment() {
 
         binding = DataBindingUtil.inflate(inflater, R.layout.fragment_news_data, container, false)
         topHeadlinesViewModel = ViewModelProvider(this).get(TopHeadlinesViewModel::class.java)
-        (activity as AppCompatActivity?)!!.supportActionBar!!.setTitle("Business Headlines")
+        (activity as AppCompatActivity?)!!.supportActionBar!!.setTitle("Science Headlines")
 
-        activity?.let { newsAlertDialog.showAlertDialog(activity as AppCompatActivity,"Business Headlines" , "Loading... Please wait") }
-        topHeadlinesViewModel.fetchNewsForCategory(Category.BUSINESS)
+        activity?.let { newsAlertDialog.showAlertDialog(activity as AppCompatActivity,"Science Headlines" , "Loading... Please wait") }
+        topHeadlinesViewModel.fetchNewsForCategory(Category.SCIENCE)
 
         adapter = NewsDataListAdapter()
         val recyclerView: RecyclerView = binding.topHeadlinesRV

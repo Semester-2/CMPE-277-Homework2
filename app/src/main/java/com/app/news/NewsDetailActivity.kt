@@ -5,6 +5,7 @@ import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import com.app.news.model.NewsData
 import com.google.android.material.appbar.CollapsingToolbarLayout
+import com.squareup.picasso.Picasso
 
 const val SELECTED_NEWS_DATA = "Selected News Data"
 class NewsDetailActivity : AppCompatActivity() {

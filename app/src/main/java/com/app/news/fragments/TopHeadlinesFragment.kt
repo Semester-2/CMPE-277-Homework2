@@ -50,10 +50,15 @@ class TopHeadlinesFragment : Fragment() {
         recyclerView.adapter = adapter
 
         topHeadlinesViewModel.headlinesLiveData.observe(viewLifecycleOwner, Observer{
-            Log.d(TAG, "Headlines Count: " + it.size)
+            Log.d(TAG, "Headlines Count: " + it)
             newsAlertDialog.dismissAlertDialog()
-            adapter.updateList(it)
+            adapter.updateList(it.articles)
             adapter.notifyDataSetChanged()
+        } )
+
+        topHeadlinesViewModel.response.observe(viewLifecycleOwner, Observer{
+            newsAlertDialog.dismissAlertDialog()
+            Log.d(TAG, it)
         } )
 
         return binding.root
