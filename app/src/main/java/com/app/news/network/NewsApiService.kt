@@ -31,6 +31,9 @@ interface NewsApiService {
     fun getCategories(@Query("category") category: String, @Query("apiKey") apiKey: String):
             Call<ResponseData>
 
+    @GET("/v2/top-headlines/")
+    fun getSearchResult(@Query("q") searchItem: String, @Query("apiKey") apiKey: String):
+            Call<ResponseData>
 
 }
 

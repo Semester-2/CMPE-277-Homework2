@@ -51,6 +51,23 @@ class TopHeadlinesViewModel : ViewModel() {
             }
         )
     }
+
+    fun fetchNewsForSearch(searchItem: String) {
+        NewsApi.retrofitService.getSearchResult(searchItem, API_KEY).enqueue(
+            object : Callback<ResponseData> {
+                override fun onFailure(call: Call<ResponseData>, t: Throwable) {
+                    response.value = "News Fetch Failed: "+ t.message
+                }
+
+                override fun onResponse(
+                    call: Call<ResponseData>,
+                    response: Response<ResponseData>
+                ) {
+                    headlinesLiveData.postValue(response.body())
+                }
+            }
+        )
+    }
 }
 
 
