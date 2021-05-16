@@ -1,34 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/navigation"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
     app:startDestination="@id/topHeadlinesFragment">
 
     <fragment
         android:id="@+id/topHeadlinesFragment"
         android:name="com.app.news.fragments.TopHeadlinesFragment"
-        android:label="TopHeadlinesFragment" />
+        android:label="TopHeadlinesFragment"
+        tools:layout="@layout/fragment_news_data"/>
     <fragment
         android:id="@+id/businessFragment"
         android:name="com.app.news.fragments.BusinessFragment"
-        android:label="BusinessFragment" />
+        android:label="BusinessFragment"
+        tools:layout="@layout/fragment_news_data"/>
     <fragment
         android:id="@+id/entertainmentFragment"
         android:name="com.app.news.fragments.EntertainmentFragment"
-        android:label="EntertainmentFragment" />
+        android:label="EntertainmentFragment"
+        tools:layout="@layout/fragment_news_data"/>
     <fragment
         android:id="@+id/healthFragment"
         android:name="com.app.news.fragments.HealthFragment"
-        android:label="HealthFragment" />
+        android:label="HealthFragment"
+        tools:layout="@layout/fragment_news_data"/>
     <fragment
         android:id="@+id/scienceFragment"
         android:name="com.app.news.fragments.ScienceFragment"
-        android:label="ScienceFragment" />
+        android:label="ScienceFragment"
+        tools:layout="@layout/fragment_news_data"/>
     <fragment
         android:id="@+id/sportsFragment"
         android:name="com.app.news.fragments.SportsFragment"
-        android:label="SportsFragment" />
+        android:label="SportsFragment"
+        tools:layout="@layout/fragment_news_data"/>
     <fragment
         android:id="@+id/technologyFragment"
         android:name="com.app.news.fragments.TechnologyFragment"
-        android:label="TechnologyFragment" />
+        android:label="TechnologyFragment"
+        tools:layout="@layout/fragment_news_data"/>
 </navigation>

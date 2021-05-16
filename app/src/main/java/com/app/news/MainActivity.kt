@@ -48,22 +48,18 @@ class MainActivity : AppCompatActivity() {
                 searchView.clearFocus()
                 searchView.setQuery(query , false)
                 searchItem.collapseActionView()
-                //Toast.makeText(this@MainActivity, "onQueryTextSubmit : $query",Toast.LENGTH_LONG).show();
                 if (query != null) {
                     fragmentRefreshListener.refreshFragment(query)
                 }
                 return true
             }
-
             override fun onQueryTextChange(newText: String?): Boolean {
-
                 return false
             }
-
         })
-
         return true
     }
+
     private lateinit var fragmentRefreshListener : FragmentRefreshListener
     fun setRefreshListener(fragmentRefreshListener: FragmentRefreshListener){
         this.fragmentRefreshListener = fragmentRefreshListener
